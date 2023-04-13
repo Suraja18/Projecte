@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get("/welcome/{name}",[UserController::class,'userview']);
+Route::post("/welcome/{name}",[UserController::class,'userview']);
 
 Route::get('/views', function () {
     return view('view');
