@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get("/{name}",[UserController::class,'userview']);
+Route::get("/welcome/{name}",[UserController::class,'userview']);
+
+Route::get('/views', function () {
+    return view('view');
+});
+
+//Route::get("/views","view");
 
 //Route::get('/{name}', function ($name) {
 //    return view('welcome',['name'=> $name]);
